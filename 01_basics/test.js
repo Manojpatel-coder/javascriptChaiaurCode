@@ -1,0 +1,1 @@
+console.log("hey first code to javascipt");
