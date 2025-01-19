@@ -6,12 +6,46 @@
     <title>Dom learning</title>
 </head>
 <body>
-<h1>Manoj</h1>
-<h1>why</h1>
-<h1>are</h1>
-<h1>You</h1>
-<h1>here</h1>
-        <script src="dom.js"></script>
+<ul class="languages">
+    <li>python</li>
+</ul>
+
     </div>
 </body>
+<script>
+    
+//we are creating a function to create element 
+function addCreateElement(langName){
+const li=document.createElement('li');
+li.innerHTML=`${langName}`;
+document.querySelector(".languages").appendChild(li);
+
+}
+
+addCreateElement("java");
+addCreateElement("php");
+
+//other optimized function to create Element is
+function addOptCreateElement(langName){
+const li=document.querySelector("li");
+li.appendChild(document.createTextNode(langName));
+document.querySelector(".languages").appendChild(li);
+
+}
+addOptCreateElement("html");
+
+
+//editing a existing element 
+const editt=document.querySelector("li:nth-child(2)");
+const newLi=document.createElement('li');
+newLi.textContent="replaced content";
+editt.replaceWith(newLi);
+
+
+const edit2=document.querySelector("li:first-child");
+edit2.outerHTML='<li>newLang</li>';
+
+
+//to remove a element get its refernece by query selector and element.remove();
+</script>
 </html>
