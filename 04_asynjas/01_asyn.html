@@ -1,0 +1,37 @@
+// normally javascript execute as async code place aside and normal code executed then after it aysc code will be executed
+//promises queue is considerd as high priority 
+
+
+//setTimeOut takes a callback and A time after which it will be executed
+//clearTimeOut take its refernce to stop it if required
+
+//setInterval take a time and callback to execute it after then time iterating
+//to stop it clear Interval is used
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>learing js from chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+let start=document.querySelector("#start")
+let stop=document.querySelector('#stop');
+start.addEventListener('click',()=>{
+  var interval1= setInterval(()=> {
+    let date=new Date();
+    console.log("manoj")
+    console.log(date)
+},1000)
+stop.addEventListener("click",()=>{
+    clearInterval(interval1);
+})
+})
+
+</script>
+</html>
