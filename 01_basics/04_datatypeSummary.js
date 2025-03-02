@@ -40,8 +40,45 @@ let arr2=arr;
 //its my approach only because arr has reference which copied to arr2 both have same reference so value change for one change other
 
 
+//About string
+const gameName =new String("Manoj");
+console.log(gameName[3]);//o
+//string slice method take negative values also because sustring ignore negative values
+gameName.replace("m","p");
+//convert m to p
 
+//string split breaks according to parameter given and return array 
+const str="ma-no-j"
+console.log(str.split('-');//["ma","no","j"];
 
-//dates in javascript
-let date=new Date();
-console.log(date);
+//About Number
+const balance =new Number(13);
+//explictily defining Number 
+//some number method are balance.toString() balance.toFixed(3)
+
+//About math library 
+//it has many methods such as Math.random() Math.round() Math.ceil() Math.floor()\
+//Math.random() give 0<=value<1
+//Math.floor(Math.random()*(max-min+1))+min
+
+  
+//dates in javascript 1Jan 1970
+// Date : Date is an object in javascript. 
+// JavaScript stores dates as number of milliseconds since January 01, 1970
+const myDate = new Date();
+console.log(myDate) //Output : 2023-10-09T14:38:09.847Z
+// We can use various methods to convert this date into more readable value.
+console.log(myDate.toString()) //Output : Mon Oct 09 2023 07:39:18 GMT-0700 (Pacific Daylight Time)
+
+console.log(myDate.toLocaleString()) // Output : 10/9/2023, 7:44:20 AM
+console.log(myDate.toLocaleDateString()) //Output : 10/9/2023
+console.log(myDate.toLocaleTimeString()) // Output : 7:45:31 AM
+
+console.log(myDate.toDateString()) //Output : Mon Oct 09 2023
+console.log(myDate.toTimeString()) // Output : 07:46:40 GMT-0700 (Pacific Daylight Time)
+
+console.log(myDate.toISOString()) // Output : 2023-10-09T14:43:39.337Z
+console.log(myDate.toJSON()) //Output : 2023-10-09T14:40:58.495Z
+
+let myCreateDate=new Date(2002,11,24);//dob
+//Date.now() return millisecond value from 1 jan 1970
