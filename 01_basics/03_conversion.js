@@ -1,6 +1,6 @@
 let score="33";
 console.log(typeof score);//string
-
+console.log(typeof (score));//string
 
 //syntax for conversion
 let valueInNumber=Number(score);
@@ -20,6 +20,14 @@ console.log(isNumber)//NaN
 //undefined give NaN
 //null gives 0
 
+
+//some conversion to boolean 
+//let isLoggedIn=1;
+let booleanIsLoggedIn=Boolean(isLoggedIn);//true
+//falsy values are 0 false undefined null and NAN  
+
+//to convert to different type we use String() Boolean() Number() is used
+
 //some operation of js
 console.log(2+2);//4
 console.log("1"+2);//12
@@ -33,6 +41,8 @@ console.log(null==0);//false
 console.log(null>=0);//true
 //reason is equality check == and comparions work differently >= <=
 //comparison convert null to number treating it as 0 as a result true is returned 
+console.log("2">1); //true
+//convert "2" to number then compare that why true
 
 
 //=== check value as well as type
