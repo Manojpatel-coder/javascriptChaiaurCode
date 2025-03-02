@@ -1,6 +1,6 @@
 "use strict";
 //syntax defined to say intrepetor to use all newever version of js on file
-
+//alert("hello") this will not work becoz we are in node
 //ecma script defined how all component of javascipt should be defined
 
 //types of datatypes in javacript
@@ -14,3 +14,4 @@
 
 
 //type of null is object 
+//type of undefined is undefined
