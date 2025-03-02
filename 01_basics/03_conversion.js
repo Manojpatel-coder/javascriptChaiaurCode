@@ -35,6 +35,6 @@ console.log(null>=0);//true
 //comparison convert null to number treating it as 0 as a result true is returned 
 
 
-//=== check value as value as data
+//=== check value as well as type
 console.log("2"==2);//true
 console.log("2"===2);//false
