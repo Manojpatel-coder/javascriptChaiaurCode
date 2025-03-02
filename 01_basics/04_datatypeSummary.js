@@ -23,7 +23,7 @@ console.log(id===anotherId);//false
 //stack(primitive)  heap(non primitive)
 
 
-//non primitive data stored in heap and when we want data its orignial refernce is given
+//non primitive data stored in heap and there reference in stack when we want data its orignal refernce is given so change occur change main objet
  
 
 
