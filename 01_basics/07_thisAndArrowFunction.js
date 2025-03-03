@@ -3,23 +3,24 @@
 //it will give empty object in node engine
 //but will give window objct when run on browser
 
-//arrow function and normal function return same empty object in node
+//this in arrow function and normal function return same empty object in node
 //arrow function in javascript has implicit return without using return vallue will be returned automatically
 const app=(num1,nums2)=>num1+nums2;//valid
 const app1=(num2,num3)=>(num1+num2);//valid
 //const app3=(num3,num4)=>{num1+num2};//invalid -----when you use curly braces then you have to write return statement
 
-//immemdiately invoking function
+//immemdiately invoking function expressions iife
+//to avoid global scope pollution iife is used
 //()()
 (function app(){
     console.log("IIFE function ")
-})();//named IIFE
+})();//named IIFE //semicolon is required to stop iife
 //to pass parameters to it
 ((num1)=>{
     console.log(num1)
 })(3);//unnamed IIFE
 
-
+//*****************interview especific
 //dealing of forof loop on map 
 const map=new Map();
 map.set("a","1");
