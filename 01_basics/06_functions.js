@@ -4,6 +4,10 @@ function sayHello(){
 console.log( typeof sayHello);
 //value given at time of declartion is called parameters
 //calling value is called argumennts
+//sayHello reference
+//sayHello() execute
+
+//at time of declaration function can have default value also if new value is not passed default values is passes
 
 
 //when have no idea about the number of paramters in function we use rest opertor
@@ -21,11 +25,13 @@ if(true){
 }
 console.log(a)//10
 console.log(b);//gives error
-
+//let has block scope but var has global scope
 
 
 //as we know two type of function declaration
 //if you call addOne before declartion it will exexute but addTwo which is declared as function expression type wil give error
+
+//**** Normal declaration is hoisteed but function expression is not hoisted
 addOne();
 function addOne(num){
     return num+1;
