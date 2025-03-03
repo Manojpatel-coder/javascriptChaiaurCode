@@ -49,3 +49,11 @@ arr.forEach((element)=>{
 //reduce  method reduce a array to single value
 //array.reduce(callback,intialVAlue);
 //array.reduce((acc,ele)=>acc+el),0);
+
+
+
+//chaining of array methods
+const myNum=[1,23,4,3,22,2]
+const updated=myNum.map((num)=>num*10).map((num)=>num-10).filter((num)=>num%2==0);
+
+//reduce method of array reduce array to single value
