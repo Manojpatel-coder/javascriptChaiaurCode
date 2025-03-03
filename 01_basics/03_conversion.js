@@ -24,8 +24,8 @@ console.log(isNumber)//NaN
 //some conversion to boolean 
 //let isLoggedIn=1;
 let booleanIsLoggedIn=Boolean(isLoggedIn);//true
-//falsy values are 0 false undefined null and NAN  
-
+//falsy values are 0 false undefined null NAN -0 BigInt
+//truthy values are "0" 'false' ," ",[],{},function(){} 
 //to convert to different type we use String() Boolean() Number() is used
 
 //some operation of js
@@ -44,6 +44,9 @@ console.log(null>=0);//true
 console.log("2">1); //true
 //convert "2" to number then compare that why true
 
+//null coalescing operator wrok for null and undefined
+let val1=5??10 //5
+  val1=null??12 //12
 
 //=== check value as well as type
 console.log("2"==2);//true
