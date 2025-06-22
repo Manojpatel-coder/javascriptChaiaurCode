@@ -1,3 +1,19 @@
+new Promise((resolve, reject) => {
+    resolve("Start");
+})
+.then((data1) => {
+    console.log(data1); // ➤ "Start"
+    return data1 + " → Step1";
+})
+.then((data2) => {
+    console.log(data2); // ➤ "Start → Step1"
+    return data2 + " → Step2";
+})
+.then((data3) => {
+    console.log(data3); // ➤ "Start → Step1 → Step2"
+});
+
+
 // the promises is object represents eventual completion or failure of ashynchrouss operation and its resulting value
 //promises three states are fulfill pending or rejected
 const promiseOne=new Promise(function(resolve,reject){
