@@ -39,6 +39,7 @@ console.log(1+2+"2");32
 console.log(null>0);//false
 console.log(null==0);//false
 console.log(null>=0);//true
+null == undefined ➤ true
 //reason is equality check == and comparions work differently >= <=
 //comparison convert null to number treating it as 0 as a result true is returned 
 console.log("2">1); //true
