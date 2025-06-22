@@ -96,7 +96,24 @@ console.log(iphone.createId());
 //closue
  
 
+//call bind and apply are used to pass this scope 
+function greet() {
+  console.log("Hi, I'm " + this.name);
+}
 
+const person = { name: "Manoj" };
+
+const boundGreet = greet.bind(person); // just binds
+boundGreet(); // ➤ Hi, I'm Manoj
+
+//in call and apply when function is called object whose these scope should be used also passed are parameters
+function greet(age, city) {
+  console.log(`${this.name}, Age: ${age}, City: ${city}`);
+}
+
+const person = { name: "Manoj" };
+
+greet.call(person, 22, "Kanpur");
 
 
 
