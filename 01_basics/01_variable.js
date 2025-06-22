@@ -14,7 +14,9 @@ school="gvs";//also works but not to use
 const name="manoj";//varible defined with const cannot be changed in future give error if you try to do so
 let rollNo=123;
 var college="Lnct";
+//var type variable are not block scoped they can access outside block 
+//prefer not to use var because it has function scope
 
-//prefer not to use var because it has function scope and block scope
+
 console.table([name,rollNo,college]);
 //method to show varible data in table form
