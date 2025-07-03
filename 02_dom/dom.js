@@ -40,7 +40,7 @@ div.appendChild(addText)//more optimised because innerHTML traverse(which takes 
  //        <li>Item 3</li>
  //        <li>Item 4</li>
  //    </ul>
- // let secondItem = document.querySelector("li:nth-child(2)");
+ // let secondItem = document.querySelector("ul li:nth-child(2)");
 //select element and change value or
 //there is also property outerHTML where we have to pass html also know
 //edit or remove element 
