@@ -13,3 +13,4 @@
 //event.target selects the elemnt by whom event occur
 //element.parentNode selects the parent of that element
 //element.tagName gives the tag of element
+//element.nodeName give the same work for any type of node
